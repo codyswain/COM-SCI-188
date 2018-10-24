@@ -1,0 +1,44 @@
+body {
+    background-color: #eee;
+}
+
+.outer-div
+{
+	text-align: center;
+}
+
+.inner-div
+{
+	display:inline-block;
+	text-align: left;
+}
+
+.inner-div > h1{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Width fills div, and borders of separate table elements are joined*/
+#capitals_game_table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th,
+table td {
+	text-align: left;
+	padding: 5px /*Adds padding to each table cell*/
+}
+table th {
+	border-bottom: 4px solid black;
+}
+table td {
+	border-bottom: 1px solid grey;
+}
+
+/* CSS Style for correct/incorrect guesses */
+.correct {
+	color: blue;
+}
+.incorrect {
+	color: red;
+}

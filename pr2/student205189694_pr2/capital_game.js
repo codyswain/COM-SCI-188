@@ -36,7 +36,7 @@ $( document ).ready(function() {
 	}
 
 	// "Submit button"
-  document.getElementById("pr2__submit").onclick = function(){
+  	document.getElementById("pr2__submit").onclick = function(){
  		user_answer = document.getElementById("pr2__answer").value;
  		console.log(`User's answer is ${user_answer}`);
  		if (capital == user_answer){

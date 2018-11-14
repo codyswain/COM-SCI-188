@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Capital Game!</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />  <link href="./capital_game.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- My Code Here -->
+    <div class="outer-div">
+      <div class="inner-div">
+        <h1>Do you know the capital of this country?</h1>
+        <table id="capitals_game_table">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Capital</th> 
+              <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="pr2__question">Republic of Korea</td>
+              <td><input id ="pr2__answer" type="text"></td> 
+              <td><button id="pr2__submit" type="button">See Answer</button></td>
+            </tr>
+            <tr>
+              <td><input type='radio' name='filter' value='1' checked>All</td>
+              <td><input type='radio' name='filter' value='2'>Correct Only</td>
+              <td><input type='radio' name='filter' value='3'>Wrong Only</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <!-- <script src="./country_capital_pairs.js"></script> -->
+    <script src="./capital_game.js"></script>
+  </body>
+</html>

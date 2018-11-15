@@ -8,9 +8,12 @@
   </head>
   <body>
 
-    <!-- My Code Here -->
     <div class="outer-div">
       <div class="inner-div">
+
+        <!-- My Code Here -->
+        <div id="map"></div>
+
         <h1>Do you know the capital of this country?</h1>
         <table id="capitals_game_table">
           <thead>
@@ -40,5 +43,26 @@
     <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
     <!-- <script src="./country_capital_pairs.js"></script> -->
     <script src="./capital_game.js"></script>
+
+    <!-- Firebase Setup -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCpvme_fVugGa8kzOfURqMJ07AQLbwu0KA",
+        authDomain: "comsci-188-pr3.firebaseapp.com",
+        databaseURL: "https://comsci-188-pr3.firebaseio.com",
+        projectId: "comsci-188-pr3",
+        storageBucket: "comsci-188-pr3.appspot.com",
+        messagingSenderId: "457793407764"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL2Q-1UaP1HG3QrmT7rEKAXwW4aBzw-cw&callback=initMap"
+    async defer></script>
+
   </body>
 </html>
